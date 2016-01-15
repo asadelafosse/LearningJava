@@ -27,6 +27,10 @@ public class FizzBuzz {
         }
 
         System.out.println("\r\nThis is my second solution:");   // This is the second solution, which checks separately
+
+        threes = 1;
+        fives = 1;
+
         for (int i = 1; i<=100; i++, threes++, fives++) {        // for multiples of 15, 3 and 5 (in that order).
             if (threes == 3 && fives == 5){
                 System.out.println("FizzBuzz!");
