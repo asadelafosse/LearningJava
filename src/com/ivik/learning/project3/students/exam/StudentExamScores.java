@@ -1,7 +1,7 @@
-package com.ivik.learning.homework3.students.exam;
+package com.ivik.learning.project3.students.exam;
 
-import com.ivik.learning.homework3.students.model.Student;
-import com.ivik.learning.homework3.students.util.SortUtils;
+import com.ivik.learning.project3.students.model.Student;
+import com.ivik.learning.project3.students.util.SortUtils;
 
 /**
  * Created by Sebastien on 11-1-2016.

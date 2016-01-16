@@ -1,6 +1,4 @@
-package com.ivik.learning.Homework2;
-
-import java.util.Arrays;
+package com.ivik.learning.project2;
 
 /**
  * Created by Sebastien on 27-12-2015.

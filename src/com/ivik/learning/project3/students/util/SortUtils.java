@@ -1,6 +1,6 @@
-package com.ivik.learning.homework3.students.util;
+package com.ivik.learning.project3.students.util;
 
-import com.ivik.learning.homework3.students.model.Student;
+import com.ivik.learning.project3.students.model.Student;
 
 /**
  * Created by Sebastien on 11-1-2016.
@@ -11,19 +11,17 @@ public class SortUtils {
 
         boolean sorted = false;
 
-        while(sorted == false){
+        while(!sorted){
 
             sorted = true;
             int j = 1;
 
             for (int i = 0; i<=students.length - 2; i++) {
-                j = i + 1;
-
                 if(students[i].getScore() > students[j].getScore()) {
                     Student temp;
                     temp = students[i];
-                    students[i] = students[j];
-                    students[j] = temp;
+                    students[i] = students[i+1];
+                    students[i+1] = temp;
                     temp = null;
                     sorted = false;
                 }

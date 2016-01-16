@@ -1,4 +1,4 @@
-package com.ivik.learning.homework3.students.model;
+package com.ivik.learning.project3.students.model;
 
 /**
  * Created by Sebastien on 11-1-2016.

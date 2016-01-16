@@ -1,4 +1,4 @@
-package com.ivik.learning.homework3;
+package com.ivik.learning.project3;
 
 /**
  * Created by Sebastien on 15-1-2016.

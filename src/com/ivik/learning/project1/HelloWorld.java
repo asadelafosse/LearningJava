@@ -1,4 +1,4 @@
-package com.ivik.learning.Homework1;
+package com.ivik.learning.project1;
 
 public class HelloWorld {
 
