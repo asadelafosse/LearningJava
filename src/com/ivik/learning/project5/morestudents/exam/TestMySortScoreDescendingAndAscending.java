@@ -37,11 +37,7 @@ public class TestMySortScoreDescendingAndAscending {
         System.out.println("NAME                 SCORE ");
         System.out.println("-------------------- ------");
         for (Student i : moreStudents) {
-            System.out.print(i.getName());
-            for (int j = 0; j < 20 - i.getName().length(); j++) {
-                System.out.print(" ");
-            }
-            System.out.format("%7.2f%n", i.getScore());
+            System.out.format("%-20s%7.2f%n", i.getName(),i.getScore());
         }
         System.out.println("\n\r");
     }
