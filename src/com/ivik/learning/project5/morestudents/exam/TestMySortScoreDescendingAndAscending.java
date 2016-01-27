@@ -39,7 +39,7 @@ public class TestMySortScoreDescendingAndAscending {
         for (Student i : moreStudents) {
             System.out.format("%-20s%7.2f%n", i.getName(),i.getScore());
         }
-        System.out.println("\n\r");
+        System.out.print("\n\r");
     }
 
     public void sortDescending(){
