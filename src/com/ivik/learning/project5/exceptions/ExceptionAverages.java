@@ -5,8 +5,8 @@ package com.ivik.learning.project5.exceptions;
  */
 public class ExceptionAverages {
 
-    private double averageScore(double totalScore, String numberStudentsAsString){
-
+    private double averageScore(double totalScore, String numberStudentsAsString) throws NumberFormatException, ArithmeticException {
+            //'throws' clause is not required here, because the exceptions here are runtime exceptions, and therefore unchecked.
         try {
             int numberStudents = Integer.parseInt(numberStudentsAsString);
             int averageScore = (int) totalScore / numberStudents;       // recasting to int is required to receive a divide by zero arithmetic exception.
