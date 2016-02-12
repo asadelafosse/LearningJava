@@ -28,7 +28,7 @@ public class AddingLinesFromFile {
         System.out.println();
     }
 
-    private static void main(String[] args) throws IOException{
+    public static void main(String[] args) throws IOException{
         String fileName = ("numbers2.txt");
 
         System.out.println("The file " + fileName + " has the following lines:");
