@@ -18,9 +18,10 @@ public class CSVReader {
         ArrayList<String> csvAsString = new ArrayList();
         BufferedReader reader = new BufferedReader(new FileReader(fileName));
         boolean hasNextLine = true;
+        String aLine;
 
         while (hasNextLine) {
-            String aLine = reader.readLine();
+            aLine = reader.readLine();
             if (aLine != null) {
                 csvAsString.add(aLine);
             } else {
@@ -34,17 +35,22 @@ public class CSVReader {
     public static void main(String[] args) throws IOException, ArrayIndexOutOfBoundsException {
         ArrayList<String> csvRawArray = readCSV("People.csv");
         ArrayList<ArrayList<String>> csvSeparatedFinal = new ArrayList();
-        ArrayList<String> csvSeparatedByLine = new ArrayList();
+
 
         for (int i = 0; i <= csvRawArray.size()-1; i++) {
             String unseparatedLine = csvRawArray.get(i);
             String[] separatedLine = unseparatedLine.split(",");
+            ArrayList<String> csvSeparatedByLine = new ArrayList();
             Collections.addAll(csvSeparatedByLine, separatedLine);
-            csvSeparatedFinal.add(csvSeparatedByLine);
+            csvSeparatedFinal.add(i, csvSeparatedByLine);
         }
 
-        System.out.println(csvSeparatedFinal);
-
+        for (int i = 0; i <= csvSeparatedFinal.size()-1; i++) {
+            System.out.println(csvSeparatedFinal.get(i));
+            for (int j = 0; j <= csvSeparatedFinal.get(i).size()-1; j++){
+                System.out.println(csvSeparatedFinal.get(i).get(j));
+            }
+        }
 
     }
 }
